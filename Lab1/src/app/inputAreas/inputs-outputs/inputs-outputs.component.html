@@ -1,4 +1,9 @@
 <section class="input_output">
-  <input placeholder="type something..." (input) = "inputHandler($event)" [value]="inputValue" >
+  <h1>One to one</h1>
+  <input placeholder="type something..." (input) = "inputHandler($event)" value="{{inputValue}}" >
   <button (click) = "buttomHandler($event)" [disabled]="isDisable">Clear</button>
+  <p>{{inputValue}}</p>  
+  <p>Tow way</p>  
+  <input placeholder="type something..." [(ngModel)]="inputValue" >
+  <p>{{inputValue}}</p>
 </section>

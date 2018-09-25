@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { InputsOutputsComponent } from './inputAreas/inputs-outputs/inputs-outputs.component';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -10,7 +11,8 @@ import { InputsOutputsComponent } from './inputAreas/inputs-outputs/inputs-outpu
     InputsOutputsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
